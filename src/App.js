@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+
+  const [size, setSize] = React.useState(true);
+  const ref = React.useRef(null)
+
+  const handlerScrool = () => {
+    if (ref.current.scrollTop >= 100) {
+      setSize(false)
+    }
+    if (ref.current.scrollTop <= 10) {
+      setSize(true)
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div ref={ref} className='App' onScroll = {handlerScrool}>
+      <header className={size ? 'header' : 'header header-active'}>
+        wqeqweqwe
       </header>
+      <div className='content'></div>
     </div>
   );
 }
