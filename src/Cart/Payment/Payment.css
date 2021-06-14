@@ -1,0 +1,18 @@
+.payment {
+  margin-bottom: 20px;
+}
+
+.payment__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.payment__input {
+  width: 100%;
+  padding: 13px 17px;
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+  color: #CCC;
+}

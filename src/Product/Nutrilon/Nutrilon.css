@@ -1,0 +1,55 @@
+.nutrilon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid #E7E5E5;
+}
+
+.nutrilon__title {
+  align-self: start;
+}
+
+.nutrilon__list {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.structure__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.structure-item {
+  width: 25%;
+}
+
+.structure-item__title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.structure-item__name {
+  color: #999999;
+}
+
+.nutrilon__container {
+  max-height: 450px;
+  overflow: hidden;
+  transition: max-height .5s ease-out;
+}
+
+.nutrilon__container_hide {
+  max-height: 0;
+}
+
+.nutrilon__hide {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFB000;
+}

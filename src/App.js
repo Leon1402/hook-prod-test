@@ -1,28 +1,42 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import { Cart } from './Cart/Cart';
+import { Header } from './Header/Header';
+import { Product } from './Product/Product';
+import { changeFavorite, changeCartCount, changeFocus } from './redux/store';
 
-function App() {
 
-  const [size, setSize] = React.useState(true);
-  const ref = React.useRef(null)
-
-  const handlerScrool = () => {
-    if (ref.current.scrollTop >= 100) {
-      setSize(false)
-    }
-    if (ref.current.scrollTop <= 10) {
-      setSize(true)
-    }
-  }
-
+function App(props) {
   return (
-    <div ref={ref} className='App' onScroll = {handlerScrool}>
-      <header className={size ? 'header' : 'header header-active'}>
-        wqeqweqwe
-      </header>
-      <div className='content'></div>
+    <div className='App'>
+      <Header onFocus={props.onFocus}/>
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <Product
+              items={props.items}
+              changeFavorite={props.changeFavorite}
+              changeCartCount={props.changeCartCount} />
+          </Route>
+          <Route path="/cart">
+            <Cart items={props.items}
+              changeFavorite={props.changeFavorite}
+              changeCartCount={props.changeCartCount}
+              changeFocus={props.changeFocus}
+              onFocus={props.onFocus}/>
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  items: state.items,
+  onFocus: state.onFocus
+})
+
+
+export default connect(mapStateToProps, { changeFavorite, changeCartCount, changeFocus })(App);

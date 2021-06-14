@@ -1,0 +1,38 @@
+.input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.delivery {
+  width: 30%;
+}
+
+.input__field {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+  padding: 22px 11px 7px;
+  border-radius: 8px;
+}
+
+.input__label {
+  pointer-events: none;
+  position: absolute;
+  left: 10px;
+  transform: translateY(80%);
+  font-size: 14px;
+  line-height: 19px;
+  transition: transform .3s ease-out;
+}
+
+.input__field:focus {
+  border-color: #FFB000
+}
+
+.input__field:focus~.input__label {
+  transform: translateY(0);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+}

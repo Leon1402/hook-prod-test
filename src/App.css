@@ -1,22 +1,19 @@
 .App {
-  height: 100vh;
-  overflow: scroll;
+  background-color: #F5F4F2;
+  color: #333;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  height: 100px;
-  background-color: red;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: height .5s .3s ease-out;
+main {
+  position: relative;
+  margin-top: -50px;
+  z-index: 100;
+  padding: 0 24px;
 }
 
-.header-active {
-  height: 50px;
-}
-
-.content {
-  height: 5000px;
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
 }
