@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hook-prod-test/static/css/main.0ec3988b.chunk.css",
+    "main.js": "/hook-prod-test/static/js/main.c2d0af7a.chunk.js",
+    "main.js.map": "/hook-prod-test/static/js/main.c2d0af7a.chunk.js.map",
+    "runtime-main.js": "/hook-prod-test/static/js/runtime-main.67ec3532.js",
+    "runtime-main.js.map": "/hook-prod-test/static/js/runtime-main.67ec3532.js.map",
+    "static/css/2.f91a63ca.chunk.css": "/hook-prod-test/static/css/2.f91a63ca.chunk.css",
+    "static/js/2.0de71e34.chunk.js": "/hook-prod-test/static/js/2.0de71e34.chunk.js",
+    "static/js/2.0de71e34.chunk.js.map": "/hook-prod-test/static/js/2.0de71e34.chunk.js.map",
+    "static/js/3.5d55107c.chunk.js": "/hook-prod-test/static/js/3.5d55107c.chunk.js",
+    "static/js/3.5d55107c.chunk.js.map": "/hook-prod-test/static/js/3.5d55107c.chunk.js.map",
+    "index.html": "/hook-prod-test/index.html",
+    "static/css/2.f91a63ca.chunk.css.map": "/hook-prod-test/static/css/2.f91a63ca.chunk.css.map",
+    "static/css/main.0ec3988b.chunk.css.map": "/hook-prod-test/static/css/main.0ec3988b.chunk.css.map",
+    "static/js/2.0de71e34.chunk.js.LICENSE.txt": "/hook-prod-test/static/js/2.0de71e34.chunk.js.LICENSE.txt",
+    "static/media/CardSmall.css": "/hook-prod-test/static/media/delete.72dde292.svg",
+    "static/media/milk.eb749c0c.jpg": "/hook-prod-test/static/media/milk.eb749c0c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67ec3532.js",
+    "static/css/2.f91a63ca.chunk.css",
+    "static/js/2.0de71e34.chunk.js",
+    "static/css/main.0ec3988b.chunk.css",
+    "static/js/main.c2d0af7a.chunk.js"
+  ]
+}
